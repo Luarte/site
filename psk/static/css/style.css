@@ -1,0 +1,14 @@
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.transparent50{
+    opacity: 0.5;
+}
+
+a[href^="tel:"]:before{
+    content: "\260e";
+    margin-right: 0.5em;
+}

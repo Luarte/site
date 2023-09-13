@@ -1,0 +1,34 @@
+{% load static %}
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    {% include "includes/connections.html" %}
+    <title>{% block title %}{% endblock title %}</title>
+  </head>
+
+
+  <body>
+    
+<header>
+    {% include "includes/header.html" %}
+</header>
+
+<main>
+
+  {% include "includes/carousel.html" %}
+
+
+  {% block content %}{% endblock content %}
+
+  <footer class="container">
+    {% include "includes/footer.html" %}
+  </footer>
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+      
+  </body>
+</html>
